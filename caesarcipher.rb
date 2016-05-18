@@ -21,22 +21,20 @@ end
 	number = letters.index(string[i])
 
 #HANDLES SHIFTING PAST Z - WORKABLE SHIFTS INCLUDE 0-26, ADDED ERROR HANDLING FOR SHIFTS OVER 26
-	if shift > 26
-		shift = shift % 26
-	end
+if shift > 26
+	shift = shift % 26
+end
 
-	if number + shift > 25
-		number = number - 26
-	end
-
-#RECORDS DATA INTO VARIABLE FOR PROCESSING
+if number + shift > 25
+	number = number - 26
+end
+#ADDS ENCRYPTED DATA INTO VARIABLE
 encoded += letters[number + shift]
 
 i+=1
 
 end
 
-#RETURNS ENCRYPTED MESSAGE TO THE TERMINAL
 return encoded
 
 end
