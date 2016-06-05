@@ -34,4 +34,4 @@ return encrypted
 
 end
 
-puts caesar_cipher("ABC XYZ 123 !?#", 3)
+puts caesar_cipher("ABC xyz 123 !?#", 3)
