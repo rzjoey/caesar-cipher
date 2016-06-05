@@ -28,8 +28,6 @@ letter_position = letter_position - 26 if letter_position + shift > 25
 #ADDS ENCRYPTED CHARACTERS INTO VARIABLE
 encrypted += letters[letter_position + shift]
 
-
-
 }
 
 return encrypted
